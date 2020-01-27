@@ -1,0 +1,11 @@
+https://pt-blog.ru/25-primerov-css-animacii-knopki-2018/
+http://shpargalkablog.ru/2012/04/css-knopki.html
+https://obninsksite.ru/blog/html-and-css/krasivyie-css3-knopki-s-animacziej-i-hover-effektami
+https://nisnom.com/kollektsiya-potryasayushhih-menyu-dlya-sajta-html-css-i-javascript-jquery/
+
+https://isotope.metafizzy.co/
+https://masonry.desandro.com/
+https://getbootstrap.com/docs/3.4/components/
+http://mybootstrap.ru/components/#misc
+https://salvattore.js.org/
+https://getbootstrap.ru/docs/v4-alpha/components/dropdowns/

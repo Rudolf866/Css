@@ -1,0 +1,47 @@
+
+
+.wrap
+{
+    width: 240px;
+    height: 200px;
+    margin: 10px;
+    float: left;
+}
+.wrap > .font
+{
+    position: absolute;
+    transform: perspective(600px) rotateY(0deg);
+   background:black;
+    color: yellow;
+    width: 240px;
+    height: 200px;
+    border-radius: 7px;
+    backface-visibility: hidden;
+     -webkit- backface-visibility: hidden;
+    transition: -webkit-transform 1.5s linear 0s;
+     transition: transform 1.5s linear 0s;
+}
+.wrap > .back
+{
+    position: absolute;
+    transform: perspective(600px) rotateY(180deg);
+    background:blue;
+    color: yellow;
+    width: 240px;
+    height: 200px;
+    border-radius: 7px;
+    backface-visibility: hidden;
+    -webkit- backface-visibility: hidden;
+    transition: -webkit-transform 1.5s linear 0s;
+     transition: transform 1.5s linear 0s;
+}
+.wrap:hover > .font
+{
+     -webkit- transform: perspective(600px) rotateY(-180deg);
+    transform: perspective(600px) rotateY(-180deg);
+}
+.wrap:hover > .back
+{
+      -webkit- transform: perspective(600px) rotateY(0deg);
+      transform: perspective(600px) rotateY(0deg);
+}

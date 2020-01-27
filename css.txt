@@ -1,0 +1,80 @@
+https://webref.ru/css
+https://vk.com/videos-174586137?z=video-174586137_456239018%2Fclub174586137%2Fpl_-174586137_-2
+http://jsfiddle.net/R97Rv/
+=================================
+div
+css
+position: absolute;
+    left: 50%;
+    margin-left: -150px; /* половина ширины блока, который центрируем */
+
+==============================================================
+<div class="map">
+    <div class="filter"></div>
+</div>
+.map {
+    background: #789;
+    height:400px;
+    width:1260px;
+}
+.filter {
+    background: green;
+    height:200px;
+    width:300px;
+    margin: 0 auto;
+    position:relative;
+    left:-300px;
+    top:100px;
+}
+=============================================================
+
+        <div id="testCarousel" class="carousel slide" data-ride="carousel">
+                      <!-- Индикаторы карусели -->
+	<ol class="carousel-indicators">
+		<!-- Перейти к слайду №0 с помощью соответствующего атрибута с индексом data-slide-to="0" -->
+		<li data-target="#testCarousel" data-slide-to="0" class="active" ></li>
+		<!-- Перейти к слайду №1 с помощью соответствующего индекса data-slide-to="1" -->
+		<li data-target="#testCarousel" data-slide-to="1"></li>
+		<!-- Перейти к слайду №1 с помощью соответствующего индекса data-slide-to="2" -->
+		<li data-target="#testCarousel" data-slide-to="2"></li>
+	</ol>
+
+	              <!-- Слайды карусели -->
+	              <div class="carousel-inner">
+   {% for product in products %}
+     {% if forloop.first %}
+	              	<!-- Слайд 1 -->
+		 <div class="item active">
+			<img class="slide-image" src="{{ product.image.url}}" alt="Alternate Text" 
+           />
+			<button class="btn btn-primary btn-lg" style=";" >Какая-то кнопка</button>
+		</div>
+     {% else %}
+		<!-- Слайд 2 -->
+		<div class="item">
+			<img class="slide-image" src="{{ product.image.url}}" alt="Alternate Text" 
+                 />
+			<button class="btn btn-success btn-lg">Какая-то кнопка</button>
+		</div>
+		<!-- Слайд 3 -->
+		<div class="item">
+			<img class="slide-image" src="{{ product.image.url}}" alt="Alternate Text" 
+                />
+			<button class="btn btn-default btn-lg">Какая-то кнопка</button>
+		</div>
+     {% endif %}
+   {% endfor  %}
+	</div>
+
+	<!-- Навигация карусели (следующий или предыдущий слайд) -->
+	<!-- Кнопка, переход на предыдущий слайд с помощью атрибута data-slide="prev" -->
+	<a class="left carousel-control" href="#testCarousel" 
+       role="button" data-slide="prev" style="background:transparent;" >
+		<span class="glyphicon glyphicon-chevron-left" style="color:black;" ></span>
+	</a>
+	<!-- Кнопка, переход на следующий слайд с помощью атрибута data-slide="next" -->
+	<a class="right carousel-control" href="#testCarousel" 
+       role="button" data-slide="next" style="background:transparent;" >
+		<span class="glyphicon glyphicon-chevron-right" style="color:black;" ></span>
+	</a>
+</div>
